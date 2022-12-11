@@ -1,3 +1,9 @@
+import { addDecorator } from "@storybook/react"
+import React, { Suspense } from "react"
+import { ThemeProvider } from "styled-components"
+import theme from "shared/constants/theme"
+import { GlobalStyle } from "shared/styles/GlobalStyle"
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +13,12 @@ export const parameters = {
     },
   },
 }
+
+addDecorator((Story) => (
+  <Suspense fallback={<div></div>}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Story />
+    </ThemeProvider>
+  </Suspense>
+))
