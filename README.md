@@ -5,7 +5,7 @@ I have created a view that shows a list and places to choose from. When you clic
 
 
 About
-===
+==
 A story and tests have been created for each component in the app.
 
 I have created also TextField component to show reusable component with library react-hook-form, and reusable button with three variants.
