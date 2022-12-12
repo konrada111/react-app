@@ -4,9 +4,9 @@ import styled from "styled-components"
 export const ItemWrapper = styled.div<{ active: boolean }>`
   cursor: pointer;
   text-align: center;
-  ${font("Lato", 16, 500, 18)}
-  padding-top: 5px;
-  border-top: 1px solid ${({ theme }) => theme.colors.grey[400]};
+  ${font("Lato", 24, 500, 28)}
+  padding:  0 5px;
+  border-right: 1px solid ${({ theme }) => theme.colors.grey[400]};
   color: ${({ active }) =>
     active
       ? ({ theme }) => theme.colors.blue[400]
@@ -15,9 +15,9 @@ export const ItemWrapper = styled.div<{ active: boolean }>`
 export const BoxWrapper = styled.div<{ active: boolean }>`
   cursor: pointer;
   text-align: center;
-  ${font("Lato", 20, 500, 24)};
-  max-width: 30px;
-  max-height: 30px;
+  ${font("Lato", 32, 500, 40)};
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
   padding: ${rem(10)};
   border: 1px solid grey;

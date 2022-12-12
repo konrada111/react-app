@@ -2,12 +2,14 @@ import React from "react"
 
 import { ThemeProvider } from "styled-components"
 import theme from "shared/constants/theme"
-import Seats from "Seats"
+import Home from "Home"
+import { GlobalStyle } from "shared/styles/GlobalStyle"
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Seats />
+      <GlobalStyle />
+      <Home />
     </ThemeProvider>
   )
 }
